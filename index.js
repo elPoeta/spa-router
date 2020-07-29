@@ -5,9 +5,10 @@ const url = require('url');
 const lookup = require("mime-types").lookup;
 const PORT = 3000;
 
-const httpServer = (req, resp) => {
+const httpServer = (req, res) => {
     let parsedURL = url.parse(req.url, true);
     let urlPath = parsedURL.path.replace(/^\/+|\/+$/g, "");
+
     if (urlPath == "") {
         urlPath = "index.html";
     }

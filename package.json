@@ -22,6 +22,6 @@
   },
   "homepage": "https://github.com/elPoeta/spa-router#readme",
   "dependencies": {
-    "mime": "^2.4.6"
+    "mime-types": "^2.1.27"
   }
 }
