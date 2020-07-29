@@ -9,27 +9,27 @@ export class Router {
     }
 
     get mode() {
-        return this.mode;
+        return this._mode;
     }
 
     set mode(mode) {
-        this.mode = (mode === 'history' && window.history.pushState) ? 'history' : 'hash';
+        this._mode = (mode == 'history' && window.history.pushState) ? 'history' : 'hash';
     }
 
     get root() {
-        return this.root;
+        return this._root;
     }
 
     set root(root) {
-        this.root = root;
+        this._root = root;
     }
 
     get routes() {
-        return this.routes;
+        return this._routes;
     }
 
     set routes(routes) {
-        this.routes = routes;
+        this._routes = routes;
     }
 
     add(route) {

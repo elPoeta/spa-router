@@ -7,26 +7,26 @@ export class Route {
     }
 
     get name() {
-        return this.name;
+        return this._name;
     }
 
     set name(name) {
-        this.name = name;
+        this._name = name;
     }
 
     get path() {
-        return this.path;
+        return this._path;
     }
 
     set path(path) {
-        this.path = path;
+        this._path = path;
     }
 
     get handler() {
-        return this.handler;
+        return this._handler;
     }
 
     set handler(handler) {
-        this.handler = handler;
+        this._handler = handler;
     }
 }
