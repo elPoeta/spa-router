@@ -8,12 +8,13 @@ const PORT = 3000;
 const httpServer = (req, res) => {
     let parsedURL = url.parse(req.url, true);
     let urlPath = parsedURL.path.replace(/^\/+|\/+$/g, "");
-
     if (urlPath == "") {
         urlPath = "index.html";
     }
+    console.log('urlPath :: ', urlPath)
     let file = __dirname + "/public/" + urlPath;
     let mime = lookup(urlPath);
+    console.log("MIME:: ", mime)
     res.writeHead(200, { "Content-type": mime });
     const readStream = fs.createReadStream(file, { encoding: 'utf-8' });
     readStream.on('error', error => {
