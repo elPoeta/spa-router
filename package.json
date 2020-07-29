@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/elPoeta/spa-router/issues"
   },
-  "homepage": "https://github.com/elPoeta/spa-router#readme"
+  "homepage": "https://github.com/elPoeta/spa-router#readme",
+  "dependencies": {
+    "mime": "^2.4.6"
+  }
 }
